@@ -1,7 +1,7 @@
 export default function BackofficeLayout({ children }) {
   return (
     <section>
-      Extra custom client dashboard example ,internnaly in client folder
+      Example of extra custom client layout... maybe we dont need this.
       {children}
     </section>
   );
