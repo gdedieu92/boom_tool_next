@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./../globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "../../components/app-sidebar";
+import Breadcrumbs from "@/src/components/breadcrumbs";
+import { NavbarMobile } from "@/src/components/navbar-mobile";
 
 
 const geistSans = localFont({
@@ -29,8 +31,13 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
           <AppSidebar />
           <main>
-            <SidebarTrigger />
-            <div className="container px-4 mx-auto">{children}</div>
+            <SidebarTrigger id="sidebarTrigger" className="hidden md:inline-flex"/>
+            
+            <NavbarMobile/>
+            <div className="container px-3 md:px-6 lg:px-8 mx-auto">
+              <Breadcrumbs/>
+              {children}
+              </div>
           </main>
         </SidebarProvider>
       </body>
