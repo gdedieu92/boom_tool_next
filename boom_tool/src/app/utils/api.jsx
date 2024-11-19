@@ -16,6 +16,11 @@ export const API_CLIENT = {
                 amount: faker.finance.amount(),
                 status: faker.helpers.arrayElement(["failed", "successful", "pending"]),
                 email: faker.internet.email(),
+                name: faker.company.name(),
+                team: faker.internet.email(),
+                baseSalary: faker.finance.amount(),
+                team: faker.helpers.arrayElement(["Team A", "Team B", "Team C"]),
+                role: faker.helpers.arrayElement(["Manager", "Developer", "Designer"]),
             };
             response.data.push(client);
         }

@@ -45,12 +45,12 @@ const items = [
   },
   {
     title: 'Clients',
-    url: '/backoffice/client',
+    url: '/backoffice/clients',
     icon: UserRound,
   },
   {
     title: 'Team Members',
-    url: '/team-members',
+    url: '/backoffice/team-members',
     icon: Users2Icon,
   },
   {

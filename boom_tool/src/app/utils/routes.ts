@@ -18,12 +18,12 @@ const routes:IRoute[] = [
   },
   {
     title: "Clients",
-    url: "/backoffice/client",
+    url: "/backoffice/clients",
     private:true,
   },
   {
     title: "Team Members",
-    url: "/team-members",
+    url: "/backoffice/team-members",
     private:true,
   },
   {
